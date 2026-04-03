@@ -18,11 +18,10 @@ function HomePage() {
   };
   const handleAddTOCart = async (foodId) => {
     try {
-      const res = await addToCart(
-            {
-                foodId: foodId,
-                quantity: 1,
-            });
+      const res = await addToCart({
+        foodId: foodId,
+        quantity: 1,
+      });
       alert("Added to Cart");
     } catch (error) {
       console.log("error");
@@ -45,7 +44,6 @@ function HomePage() {
             <button onClick={() => handleAddTOCart(food._id)}>
               Add To Cart
             </button>
-            
           </div>
         );
       })}

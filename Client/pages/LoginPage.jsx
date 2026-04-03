@@ -22,7 +22,7 @@ function LoginPage() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 border p-2 rounded ">
+    <div className="flex items-center  justify-center min-h-screen bg-gray-100 border p-2 rounded ">
       <h2 className="text-3xl text-red-500">Login</h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
